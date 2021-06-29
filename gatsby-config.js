@@ -3,6 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: "Property Deal Task",
+    siteUrl: "https://propertydealdemo.netlify.app",
   },
   plugins: [
     "gatsby-plugin-sass",
