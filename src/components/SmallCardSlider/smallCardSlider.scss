@@ -1,0 +1,99 @@
+@import "src/styles/base/variables";
+@import "src/styles/base/mixin";
+@import "src/styles/base/common";
+@import "src/styles/base/typography";
+
+.data__rely__section {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF5EF 50%);
+  padding: 65px 0;
+  overflow: hidden;
+  h2 {
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  .data__rely__slider {
+    background-image: url(../../images/logo-shade-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1080px;
+    position: relative;
+    padding-top: 20px;
+    &:before, &:after {
+      background: linear-gradient(to right, #FFF5EF 100%, #FFF5EF 100%);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 550px;
+      z-index: 2;
+      opacity: 0.6;
+      filter: blur(15px);
+      @media (max-width: $screen-lg-max) {
+        width: 38%;
+      }
+    }
+    &::after {
+      right: -100px;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+    &::before {
+      left: -100px;
+      top: 0;
+    }
+    .overlay {
+      display: none;
+    }
+    .marquee-container {
+      overflow-x: visible !important;
+      .marquee {
+        min-width: auto !important;
+      }
+    }
+    &__top {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      padding: 11px 0;
+    }
+    &__bottom {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      padding: 11px 0;
+    }
+    .single__slide {
+      background-color: $white-color;
+      @include border-radius(8px);
+      box-shadow: 0 8px 12px -4px rgba(0,0,0,0.15), 0 0 12px 0 rgba(0,0,0,0.07);
+      padding: 12px;
+      width: 112px;
+      height: 112px;
+      margin: 5px 12px;
+      .circle {
+        @include square(32px);
+        @include border-radius(100%);
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        color: $white-color;
+        margin: 0 0 8px;
+        &.yellow-bg {
+          background-color: $yellow-bg;
+        }
+        &.orange-bg {
+          background-color: $orange-bg;
+        }
+        &.blue-bg {
+          background-color: $blue-bg;
+        }
+        &.purple-bg {
+          background-color: $purple-bg;
+        }
+      }
+      p {
+        font-weight: $font-weight-semibold;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+//
+// Variables
+// --------------------------------------------------
+
+$black-base: #202020;
+$dark-black: #0A0A0A;
+$theme-color: #0843A6;
+$theme-dark-color: #226b66;
+$white-color: #ffffff;
+
+$title-color: #4F002D;
+$title-span-color: #9E0059;
+
+$yellow-bg: #B18D00;
+$orange-bg: #F76D1E;
+$blue-bg: #0843A6;
+$purple-bg: $title-span-color;
+
+$body-bg: $white-color;
+$brand-primary: $theme-color;
+
+//== Footer color
+$footer-bg: $theme-dark-color;
+$footer-font-color: $white-color;
+
+//## Font
+$font-family-base: 'Assistant', sans-serif;
+$font-family-title: 'Cabin', sans-serif;
+
+$font-size-base: 15px;
+$font-size-large: 20px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+
+$font-size-h1: floor(($font-size-base * 4.3));
+$font-size-h2: ceil(($font-size-base * 3.2));
+$font-size-h3: ceil(($font-size-base * 2.7));
+$font-size-h4: ceil(($font-size-base * 2.4));
+$font-size-h5: ceil(($font-size-base * 2));
+$font-size-h6: ceil(($font-size-base * 1.7));
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.6;
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+$font-weight-semibold: 600;
+
+
+//== Media queries breakpoints
+$screen-xxs: 481px;
+//** Deprecated `$screen-xs-min`
+$screen-xxs-min: $screen-xxs;
+//** Deprecated `$screen-phone`
+$screen-smallphone: $screen-xxs-min;
+
+//== Media queries breakpoints
+$screen-xs: 641px;
+//** Deprecated `$screen-xs-min`
+$screen-xs-min: $screen-xs;
+//** Deprecated `$screen-phone`
+$screen-phone: $screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm`
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+//** Deprecated `$screen-tablet`
+$screen-tablet: $screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md`
+$screen-md: 1024px;
+$screen-md-min: $screen-md;
+//** Deprecated `$screen-desktop`
+$screen-desktop: $screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg`
+$screen-lg: 1280px;
+$screen-lg-min: $screen-lg;
+//** Deprecated `$screen-lg-desktop`
+$screen-lg-desktop: $screen-lg-min;
+
+// Large screen
+//** Deprecated `$screen-xlg`
+$screen-xlg: 1441px;
+$screen-xlg-min: $screen-xlg;
+//** Deprecated `$screen-lg-desktop`
+$screen-xlg-desktop: $screen-xlg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-vxxs-max: ($screen-xxs-min - 1);
+$screen-vxs-max: ($screen-xs-min - 1);
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xlg-min - 1);
