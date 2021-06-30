@@ -5,9 +5,9 @@
 ## 🚀 Quick start
 
 
-1.  **Start developing.**
+1.  **Start project.**
 
-    Navigate into your new site’s directory and start it up.
+    Download the zip and Navigate into your site’s directory and start it up.
 
     ```shell
     npm install
