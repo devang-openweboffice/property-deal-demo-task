@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SmallCardSlider = () => {
   var settings = {
     speed: 35,
-    delay: 1,
+    delay: 0,
     gradient: false,
   };
 
@@ -23,7 +23,7 @@ const SmallCardSlider = () => {
 
         <div className="data__rely__slider">
           <div className="data__rely__slider__top">
-            <Marquee {...settings} speed={40}>
+            <Marquee {...settings} speed={50}>
               {topCardSliderData &&
                 topCardSliderData.map((slide, i) => (
                   <div className="single__slide" key={`slide-${i}`}>
