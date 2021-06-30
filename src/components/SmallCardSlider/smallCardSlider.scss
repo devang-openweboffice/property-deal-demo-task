@@ -19,23 +19,25 @@
     position: relative;
     padding-top: 20px;
     &:before, &:after {
-      background: linear-gradient(to right, rgba(248, 251, 253, 1), rgba(248, 251, 253, 0));
+      background: linear-gradient(to right, #f8fbfdbf, rgb(248 251 253 / 31%));
       content: "";
       height: 100%;
       position: absolute;
-      width: 700px;
+      width: 500px;
       z-index: 2;
+      // opacity: 0.6;
+      filter: blur(20px);
       @media (max-width: $screen-lg-max) {
         width: 38%;
       }
     }
     &::after {
-      right: -100px;
+      right: -20px;
       top: 0;
       transform: rotateZ(180deg);
     }
     &::before {
-      left: -100px;
+      left: -20px;
       top: 0;
     }
     .overlay {
