@@ -23,7 +23,7 @@ const SmallCardSlider = () => {
 
         <div className="data__rely__slider">
           <div className="data__rely__slider__top">
-            <Marquee {...settings} speed={50}>
+            <Marquee {...settings} speed={40}>
               {topCardSliderData &&
                 topCardSliderData.map((slide, i) => (
                   <div className="single__slide" key={`slide-${i}`}>
