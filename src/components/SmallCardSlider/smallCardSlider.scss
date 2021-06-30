@@ -19,14 +19,12 @@
     position: relative;
     padding-top: 20px;
     &:before, &:after {
-      background: linear-gradient(to right, #FFF5EF 100%, #FFF5EF 100%);
+      background: linear-gradient(to right, rgba(248, 251, 253, 1), rgba(248, 251, 253, 0));
       content: "";
       height: 100%;
       position: absolute;
-      width: 550px;
+      width: 700px;
       z-index: 2;
-      opacity: 0.6;
-      filter: blur(15px);
       @media (max-width: $screen-lg-max) {
         width: 38%;
       }

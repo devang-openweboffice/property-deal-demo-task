@@ -19,30 +19,6 @@
   height: $height;
 }
 
-//== @include placeholder-color (#ffffff);
-@mixin placeholder-color($color) {
-  &::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: $color;
-    opacity: 1 !important;
-  }
-  &:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: $color;
-    opacity: 1 !important;
-  }
-  &::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: $color;
-    opacity: 1 !important;
-  }
-  &:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: $color;
-    opacity: 1 !important;
-  }
-}
-
 // Flex Mixin
 @mixin flexbox {
   display: -webkit-box;
