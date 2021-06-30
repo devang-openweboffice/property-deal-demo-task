@@ -70,6 +70,21 @@ export const topCardSliderData = [
     title: "Average asking price", 
     bgClass: "orange-bg"
   },
+  {
+    icon: faBuilding,
+    title: "Property type", 
+    bgClass: "yellow-bg"
+  },
+  {
+    icon: faTruck,
+    title: "Time to rent", 
+    bgClass: "orange-bg"
+  },
+  {
+    icon: faNewspaper,
+    title: "Estate agent", 
+    bgClass: "purple-bg"
+  },
 ];
 
 export const bottomCardSliderData = [
@@ -127,5 +142,15 @@ export const bottomCardSliderData = [
     icon: faUsers,
     title: "Restaurants & cafes", 
     bgClass: "yellow-bg"
+  },
+  {
+    icon: faBlind,
+    title: "Population age groups", 
+    bgClass: "yellow-bg"
+  },
+  {
+    icon: faGraduationCap,
+    title: "Education", 
+    bgClass: "orange-bg"
   },
 ];
