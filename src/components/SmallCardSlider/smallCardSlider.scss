@@ -43,7 +43,7 @@
       display: none;
     }
     .marquee-container {
-      overflow-x: visible;
+      overflow-x: visible !important;
       .marquee {
         min-width: auto;
       }
